@@ -2,22 +2,22 @@
 
 ## Задание 1
 
-С помощью docker запустил и связл между собой:
+С помощью **docker** запустил и связал между собой:
  - elasticsearch (hot и warm ноды);
  - logstash;
  - kibana;
  - filebeat.
    
-Logstash сконфигурирован для приёма по tcp json-сообщений.
+**Logstash** сконфигурирован для приёма по tcp json-сообщений.
 
-Filebeat сконфигурирован для отправки логов docker в logstash ```/var/lib/docker/containers/*/*.log```.
+**Filebeat** сконфигурирован для отправки логов docker в **Logstash** ```/var/lib/docker/containers/*/*.log```.
 
-Cкриншот docker ps:
+Cкриншот ```docker ps```:
 
 ![](https://github.com/Granit16/monitoring_04/blob/main/docker_ps.png)
 
 
-Cкриншот интерфейса kibana:
+Cкриншот интерфейса **Kibana**:
 
 ![](https://github.com/Granit16/monitoring_04/blob/main/kibana.png)
 
